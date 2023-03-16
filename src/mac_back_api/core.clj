@@ -51,7 +51,7 @@
       (if (= loop-stopper the-chan)
         (println "Process incoming go loop terminated")
         (when-let [direction (choose-direction (mk-arena data))]
-          (println "Choosen direction: " direction)
+          (println "Chosen direction: " direction)
           (move direction)
           (recur))))))
 
